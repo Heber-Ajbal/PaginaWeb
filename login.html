@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login | Dy-play</title>
+</head>
+
+<body>
+
+
+
+    <!--========Encabezado==============-->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <h1><a href="index.html">Dy-Play</a></h1>
+                <span class="btnMenu"><i class="fa fa-bars"></i></span>
+            </div>
+
+            <div class="list-container">
+                <ul class="list">
+                    <li><a href="#" class="activo">Login</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+
+
+                </ul>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    
+        <div class="cont">
+            <div class="form-b">
+                <div class="btnBox">
+                    <div id="elegir"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+                    <button type="button" class="toggle-btn" onclick="registrar()">Registrarse</button>
+
+                </div>
+                <div class="redes">
+                    <img src="image/google.png">
+                    <img src="image/microsoft.png">
+                    <img src="image/facebook.png">
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-f" placeholder="Nombre de Usuario" required>
+                    <input type="password" class="input-f" placeholder="contraseña" required>
+                    <input type="checkbox" class="check-box" ><span>Recordar Contraseña</span>
+                    <button type="submit" class="btnSub" onclick="location.href='inicio.html'" > Iniciar Sesion</button>
+                </form>
+
+                <form id="registrar" class="input-group">
+                    <input type="text" class="input-f" placeholder="Nombre de Usuario" required>
+                    <input type="email" class="input-f" placeholder="Correo" required>
+                    <input type="password" class="input-f" placeholder="contraseña" required>
+                    <input type="checkbox" class="check-box"  required><span>Acepto los términos y condiciones</span>
+                    <button type="submit" class="btnSub" onclick="location.href='inicio.html'" > Registrar</button>
+                </form>
+            </div>
+
+
+            <script>
+                var x =document.getElementById("login")
+                var y =document.getElementById("registrar")
+                var z =document.getElementById("elegir")
+
+                function login(){
+                    x.style.left ="50px";
+                    y.style.left ="450px";
+                    z.style.left ="0px";
+                }
+
+                function registrar(){
+                    x.style.left ="-400px";
+                    y.style.left ="50px";
+                    z.style.left ="120px";
+
+                }
+                
+            </script>
+
+        </div>
+   
+
+</body>
+
+</html>
